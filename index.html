@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Nhạc nền-->
+<body>
+    
+    <audio id="weddingMusic" loop>
+    <source src="music/wedding.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" class="music-button" onclick="toggleMusic()">
+    🎵
+</button>
+
+<!--Hiệu Ứng Động-->
+    <div class="petals">
+    <span>❀</span>
+    <span>✿</span>
+    <span>❀</span>
+    <span>✿</span>
+    <span>❀</span>
+    <span>✿</span>
+</div>
+ <!--Màn 1 mở Phong Thư -->
+    <section class="opening" id="opening">
+        <div class="envelope">
+            <div class="heart">♡</div>
+
+            <p class="small-text">WEDDING INVITATION</p>
+
+            <h1>THIỆP CƯỚI</h1>
+
+            <p class="invite-text">Trân trọng kính mời bạn và người thương<br>đến chung vui cùng chúng mình</p>
+
+           <button onclick="openInvitation()">💌 MỞ THIỆP</button>
+        
+            <p class="designer-credit">
+    Thiết kế bởi <span>Em Gái Chú Rể</span><br>0969467438
+
+</p>
+        </div>
+    </section>
+  
+
+
+    <!-- NỘI DUNG THIỆP -->
+    <main id="invitation">
+
+        <!-- ẢNH BÌA -->
+        <section class="hero">
+            <div class="overlay">
+
+                <p class="small-text">THE WEDDING OF</p>
+
+                <h2 class="hero-namess">Vũ Đức Sáng & Hoàng Nhật Ánh </h2>
+
+                <p class="date">
+                    29 · 9 · 2026 Âm Lịch <br>
+                    Tức Là Ngày 7 . 11 . 2026 Dương Lịch
+                </p>
+
+                <p>
+                    WE ARE GETTING MARRIED
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- LỜI MỜI -->
+        <section class="section">
+            <p class="small-text">TRÂN TRỌNG KÍNH MỜI</p>
+
+            <h2>Gia đình & Bạn bè</h2>
+
+            <p class="text">
+               
+
+Trong ngày đặc biệt và ý nghĩa này, chúng mình rất mong muốn được cùng những người thân yêu chia sẻ niềm vui và hạnh phúc của mình. ❤️
+
+Sự hiện diện của bạn không chỉ là một lời chúc, mà còn là món quà tinh thần vô cùng quý giá đối với chúng mình. Sẽ thật trọn vẹn và ý nghĩa biết bao khi trong khoảnh khắc quan trọng của cuộc đời, chúng mình được nhìn thấy những người mình yêu thương cùng có mặt, cùng nâng ly chúc mừng và cùng lưu giữ những kỷ niệm đẹp.
+
+Hãy dành chút thời gian đến chung vui, cùng chúng mình tận hưởng những khoảnh khắc vui vẻ, những nụ cười và những câu chuyện đáng nhớ trong ngày đặc biệt này nhé!
+
+Sự có mặt của bạn chính là niềm vui và hạnh phúc lớn lao đối với chúng mình. Rất mong được đón tiếp bạn và cùng nhau tạo nên một ngày thật đáng nhớ. 🥰❤️
+
+                
+            </p>
+
+            <p class="text">
+                Hãy cùng đến chung vui và lưu giữ
+                những khoảnh khắc đáng nhớ trong ngày
+                đặc biệt này nhé! ❤️
+            </p>
+        </section>
+<section class="couple-photo-section">
+
+    <div class="couple-photo-top">
+        <span></span>
+        <p>CÔ DÂU & CHÚ RỂ</p>
+        <span></span>
+    </div>
+
+    <div class="couple-photo-heart">♡</div>
+
+    <p class="couple-photo-intro">
+        Cùng nhau viết nên câu chuyện hạnh phúc
+    </p>
+
+    <div class="couple-photo-frame">
+        <div class="photo-corner top-left"></div>
+        <div class="photo-corner top-right"></div>
+
+        <img
+            src="images/qr-dau-re.png.jpg"
+            alt="Vũ Đức Sáng & Hoàng Nhật Ánh"
+        >
+
+        <div class="photo-corner bottom-left"></div>
+        <div class="photo-corner bottom-right"></div>
+    </div>
+
+    <div class="couple-photo-name">
+        <h2 class="couple-names">Sáng <span>&</span> Ánh</h2>
+    </div>
+
+    <div class="couple-photo-names">
+
+        <div>
+            <h3>Vũ Đức Sáng</h3>
+            <p>CHÚ RỂ</p>
+        </div>
+
+        <div class="name-heart">♡</div>
+
+        <div>
+            <h3>Hoàng Nhật Ánh</h3>
+            <p>CÔ DÂU</p>
+        </div>
+
+    </div>
+
+    
+
+</section>
+
+
+      <section class="family-section">
+
+    <!-- ================= NHÀ TRAI ================= -->
+    <div class="family-block groom-block">
+
+        <div class="family-info">
+
+            <p class="family-label">NHÀ TRAI</p>
+
+            <h2>Vũ Đức Sáng</h2>
+
+            <p class="family-role">CHÚ RỂ</p>
+
+            <div class="family-divider"></div>
+
+            <p class="parent-label">MẸ</p>
+            <p class="parent-name">[Tên mẹ chú rể]</p>
+            <p class="address">
+                <strong>Địa chỉ:</strong><br>
+                [Địa chỉ nhà trai]
+            </p>
+
+        </div>
+
+        <div class="family-photo">
+            <img src="images/chu-re.jpg" alt="Chú rể Vũ Đức Sáng">
+        </div>
+
+    </div>
+    
+
+
+    <!-- ================= NHÀ GÁI ================= -->
+    <div class="family-block bride-block">
+
+        <div class="family-photo">
+            <img src="images/co-dau.jpg" alt="Cô dâu Hoàng Nhật Ánh">
+        </div>
+
+        <div class="family-info">
+
+            <p class="family-label">NHÀ GÁI</p>
+
+            <h2>Hoàng Nhật Ánh</h2>
+
+            <p class="family-role">CÔ DÂU</p>
+
+            <div class="family-divider"></div>
+            <p class="parent-label">Bố</p>
+            <p class="parent-name">[Tên mẹ cô dâu]</p>
+
+            <p class="parent-label">MẸ</p>
+            <p class="parent-name">[Tên mẹ cô dâu]</p>
+            <p class="address">
+                <strong>Địa chỉ:</strong><br>
+                [Địa chỉ nhà trai]
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- THỜI GIAN -->
+<section class="section details">
+
+        <!-- THỜI GIAN -->
+        <section class="wedding-date">
+
+    <p class="date-title">LỄ THÀNH HÔN</p>
+
+    <p class="date-subtitle"></p>
+
+    <div class="date-box">
+
+        <div class="date-line"></div>
+
+        <div class="date-day">
+            <span class="day-text">THỨ BẢY</span>
+            <strong>07</strong>
+            <span class="month-year">11 · 2026</span>
+        </div>
+
+        <div class="date-line"></div>
+
+    </div>
+
+    <p class="lunar-date">
+        (Tức ngày 29 tháng 9 năm Bính Ngọ)
+    </p>
+
+    <p class="ceremony-title">
+        HÔN LỄ ĐƯỢC CỬ HÀNH TẠI
+    </p>
+
+    <h2 class="venue-title">
+        TƯ GIA NHÀ TRAI
+    </h2>
+
+    <p class="venue-address">
+        Xã Thái Ninh, Tỉnh Hưng Yên
+    </p>
+
+    <div class="wedding-time">
+
+        <div>
+            <span></span>
+            <small>LỄ CƯỚI</small>
+        </div>
+
+        <div class="time-heart">♡</div>
+
+        <div>
+            <span></span>
+            <small>TIỆC CƯỚI</small>
+        </div>
+
+    </div>
+
+</section>
+<!-- LỊCH CƯỚI -->
+<section class="wedding-calendar-section">
+
+    <div class="calendar-title">
+        <p>WEDDING DAY</p>
+        <h2>Tháng 11 · 2026</h2>
+        <span>♡</span>
+    </div>
+
+    <div class="calendar-card">
+
+        <div class="calendar-header">
+            <h3>THÁNG 11</h3>
+            <p>2026</p>
+        </div>
+
+        <div class="calendar-weekdays">
+            <div>CN</div>
+            <div>T2</div>
+            <div>T3</div>
+            <div>T4</div>
+            <div>T5</div>
+            <div>T6</div>
+            <div>T7</div>
+        </div>
+
+        <div class="calendar-days">
+
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+
+            <!-- NGÀY CƯỚI -->
+            <div class="wedding-day">
+                <span>7</span>
+                <small>♥</small>
+            </div>
+
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+
+        </div>
+
+        <div class="calendar-bottom">
+            <strong>07 · 11 · 2026</strong>
+            <p>Ngày chúng mình về chung một nhà</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MỪNG CƯỚI -->
+<section class="wedding-gift">
+
+    <p class="gift-title">MỪNG CƯỚI</p>
+
+    <p class="gift-text">
+        **Nếu bạn muốn gửi lời chúc và một món quà nhỏ đến chúng mình, chúng mình xin trân trọng đón nhận tấm lòng của bạn. ❤️**
+
+    </p>
+
+    <div class="qr-container">
+
+        <div class="qr-card">
+            <img src="images/qr-co-dau.png.jpg" alt="QR cô dâu">
+            <h3>Hoàng Nhật Ánh</h3>
+            <p>CÔ DÂU</p>
+        </div>
+
+        <div class="qr-heart">♡</div>
+
+        <div class="qr-card">
+            <img src="images/qr-chu-re.png.jpg" alt="QR chú rể">
+            <h3>Vũ Đức Sáng</h3>
+            <p>CHÚ RỂ</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- DẢI ẢNH CƯỚI -->
+<section class="photo-gallery">
+
+    <div class="gallery-title">
+        <p>OUR MEMORIES</p>
+        <h2>Những Khoảnh Khắc Của Chúng Mình</h2>
+        <span>♡</span>
+    </div>
+
+    <div class="gallery-wrapper">
+
+        <div class="gallery-track">
+
+            <div class="gallery-item">
+                <img src="images/anh1.jpg" alt="Ảnh cưới 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh2.jpg" alt="Ảnh cưới 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh3.jpg" alt="Ảnh cưới 3">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh4.jpg" alt="Ảnh cưới 4">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh5.jpg" alt="Ảnh cưới 5">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh6.jpg" alt="Ảnh cưới 6">
+            </div>
+
+            <!-- LẶP LẠI ẢNH ĐỂ TẠO HIỆU ỨNG CHẠY LIÊN TỤC -->
+
+            <div class="gallery-item">
+                <img src="images/anh1.jpg" alt="Ảnh cưới 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh2.jpg" alt="Ảnh cưới 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh3.jpg" alt="Ảnh cưới 3">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/anh4.jpg" alt="Ảnh cưới 4">
+            </div>
+
+        </div>
+
+    </div> 
+
+</section>
+<section class="new-photo-section">
+
+    <div class="new-photo-title">
+        <p>OUR LOVE STORY</p>
+
+        <span>♡</span>
+    </div>
+
+    <div class="new-photo-grid">
+
+        <div class="new-photo large-photo">
+            <img src="images/anh1.jpg" alt="Ảnh cưới 1">
+        </div>
+
+        <div class="new-photo small-photo">
+            <img src="images/anh2.jpg" alt="Ảnh cưới 2">
+        </div>
+
+        <div class="new-photo small-photo">
+            <img src="images/anh3.jpg" alt="Ảnh cưới 3">
+        </div>
+
+        <div class="new-photo large-photo">
+            <img src="images/anh4.jpg" alt="Ảnh cưới 4">
+        </div>
+
+        <div class="new-photo large-photo">
+            <img src="images/anh5.jpg" alt="Ảnh cưới 5">
+        </div>
+
+        <div class="new-photo small-photo">
+            <img src="images/anh6.jpg" alt="Ảnh cưới 6">
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ĐỊA ĐIỂM -->
+        <section class="section location">
+
+            <p class="small-text">WEDDING VENUE</p>
+
+            <h2>Nơi Tình Yêu Bắt Đầu - Nơi Niềm Vui Hội Tụ</h2>
+
+            <p>
+                Địa chỉ: Xóm 7 Xã Thái Ninh,<br>
+                Thái Thụy, Hưng Yên
+            </p>
+
+            <a href="https://maps.app.goo.gl/h59hXhaoSrBoSLPt9" class="map-button">
+                📍 XEM BẢN ĐỒ
+            </a>
+
+        </section>
+        <!-- ===============================
+     LỜI CHÚC
+================================ -->
+
+<section class="wishes-section">
+
+    <div class="wishes-title">
+
+        <p>WEDDING GUESTBOOK</p>
+
+        <h2>Lời Chúc Dành Cho Chúng Mình</h2>
+
+        <span>♡</span>
+
+        <p class="wishes-intro">
+            Hãy để lại một lời chúc thật yêu thương
+            dành cho cô dâu và chú rể nhé! ❤️
+        </p>
+
+    </div>
+
+
+    <!-- FORM GỬI LỜI CHÚC -->
+
+    <div class="wish-form">
+
+        <input
+            type="text"
+            id="wishName"
+            placeholder="Tên của bạn"
+            maxlength="50"
+        >
+
+        <textarea
+            id="wishMessage"
+            placeholder="Viết lời chúc của bạn..."
+            maxlength="300"
+        ></textarea>
+
+        <button onclick="sendWish()">
+            💌 GỬI LỜI CHÚC
+        </button>
+
+    </div>
+
+
+    <!-- DANH SÁCH LỜI CHÚC -->
+
+    <div id="wishList" class="wish-list">
+
+        <div class="wish-item">
+
+            <div class="wish-heart">♡</div>
+
+            <div>
+                <h3>Gia đình & Bạn bè</h3>
+
+                <p>
+                    Chúc hai bạn trăm năm hạnh phúc,
+                    luôn yêu thương và đồng hành cùng nhau
+                    trên chặng đường phía trước! ❤️
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+           <!-- LỜI CUỐI -->
+<section class="closing">
+
+    <div class="closing-flower">❦</div>
+
+    <p class="closing-small">THANK YOU FOR BEING WITH US</p>
+
+    <h2>Cảm ơn bạn ❤️</h2>
+
+    <p class="closing-text">
+        Một lần nữa xin cảm ơn bạn đã dành thời gian đến<br>
+        chung vui và chứng kiến khoảnh khắc đặc biệt<br>
+        trong ngày trọng đại của chúng mình.
+    </p>
+
+    <div class="closing-line"></div>
+
+    <p class="closing-names">
+        Vũ Đức Sáng & Hoàng Nhật Ánh
+    </p>
+
+    <p class="closing-date">
+        07 · 11 · 2026
+    </p>
+
+    <div class="closing-flower bottom">❦</div>
+    <p class="designer-credit closing-credit">
+        Thiết kế bởi <span>Em Gái Chú Rể</span><br>0969467438
+    </p>
+
+    <div class="closing-flower bottom">❦</div>
+
+
+</section>
+
+    
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+
+<div class="double-happiness-fall">
+    <span>囍</span>
+    <span>囍</span>
+    <span>囍</span>
+    <span>囍</span>
+    <span>囍</span>
+    <span>囍</span>
+    <span>囍</span>
+    <span>囍</span>
+</div>
+<div class="double-happiness left">囍</div>
+<div class="double-happiness right">囍</div>
+</body>
+</html>
